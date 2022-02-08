@@ -263,11 +263,11 @@ select {
 }
 
 .hidden {
-  animation: fadeIn .2s ease-out forwards;
+  animation: fadeIn .1s ease-out forwards;
 }
 
 .visible {
-  animation: fadeOut .2s ease-out forwards;
+  animation: fadeOut .1s ease-out forwards;
 }
 
 @keyframes fadeIn {
