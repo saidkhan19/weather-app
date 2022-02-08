@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body class="clear">
+  <div class="wrapper">
+    <form class="form">
+      <input id="input" type="search" placeholder="Search a city..." class="form-controls container" autocomplete="off">
+      <ul id="autocomplete" class="autocomplete-container container">
+      </ul>
+      <button id="search-btn" class="search-btn" type="button"></button>
+    </form>
+    <div class="content-wrapper">
+      <div class="location-info">
+        <p>
+          <img src="./images/location.svg" alt="" class="location_img">
+          <span class="location_text">Osh, KG</span>
+        </p>
+        <p class="date-today">Thu 5 December 8:45 am</p>
+      </div>
+      <main class="main container">
+        <div class="weather-data">
+          <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="sun" class="weather_state">
+          <p class="temperature">10&#176</p>
+        </div>
+        <h1 class="weather_text">Clouds</h1>
+        <div class="extra_temp_info">
+          <p class="min-max-temp">11&#176 / 15&#176</p>
+          <p class="feels-like">Feels like 11&#176</p>
+        </div>
+        <div class="extra_weather_info">
+          <div class="extra_info_card">
+            <p class="extra_info_title">
+              <span>Humidity</span>
+              <img src="./images/humidity.svg" alt="">
+            </p>
+            <p id="humidity" class="extra_info_data">80%</p>
+          </div>
+          <div class="decoration_line"></div>
+          <div class="extra_info_card">
+            <p class="extra_info_title">
+              <span>Pressure</span>
+              <img src="./images/pressure.svg" alt="">
+            </p>
+            <p id="pressure" class="extra_info_data">1019<span class="extra_info_units">hPa</span></p>
+          </div>
+          <div class="decoration_line"></div>
+          <div class="extra_info_card">
+            <p class="extra_info_title">
+              <span>Wind speed</span>
+              <img src="./images/wind.svg" alt="">
+            </p>
+            <p id="wind-speed" class="extra_info_data">1.0<span class="extra_info_units">m/sec</span></p>
+          </div>
+        </div>
+      </main>
+      <div class="weekly container">
+        <div class="day_card">
+          <h2>Today</h2>
+          <p class="date_weekly">5.12</p>
+          <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
+          <p class="temp_weekly">11&#176/15&#176</p>
+        </div>
+        <div class="decoration_line"></div>
+        <div class="day_card">
+          <h2>Fri</h2>
+          <p class="date_weekly">6.12</p>
+          <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="">
+          <p class="temp_weekly">11&#176/15&#176</p>
+        </div>
+        <div class="decoration_line"></div>
+        <div class="day_card">
+          <h2>Sat</h2>
+          <p class="date_weekly">7.12</p>
+          <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="">
+          <p class="temp_weekly">11&#176/15&#176</p>
+        </div>
+        <div class="decoration_line"></div>
+        <div class="day_card">
+          <h2>Sun</h2>
+          <p class="date_weekly">8.12</p>
+          <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="">
+          <p class="temp_weekly">11&#176/15&#176</p>
+        </div>
+        <div class="decoration_line"></div>
+        <div class="day_card">
+          <h2>Mon</h2>
+          <p class="date_weekly">9.12</p>
+          <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="">
+          <p class="temp_weekly">11&#176/15&#176</p>
+        </div>
+      </div>
+      <!-- Loading with a ring -->
+      <div class="loading"><div class="ring-container"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div></div>
+      <!-- Container for alerts -->
+      <p class="alert-body container"></p>
+    </div>
+    <div class="first-view">
+      <p>Search for a city !</p>
+      <img src="./images/sun-main-page.svg" alt="">
+    </div>
+  </div>  <!-- Wrapper -->
+
+  <script src="./main.js" type="module"></script>
+</body>
+</html>
