@@ -247,20 +247,19 @@ select {
   overflow-y: auto;
 }
 .list-item {
-  backdrop-filter: blur( 100px );
   padding: 5px 0 5px 15px;
   cursor: pointer;
-  transition: all .1s;
+  transition: background-color .1s;
 }
 
 .list-item + * {
   border-top: 1px solid rgba( 255, 255, 255, 0.4 );
 }
 
-/* .list-item:focus,
+.list-item:focus,
 .list-item:hover {
   background-color: rgba( 255, 255, 255, 0.2 );
-} */
+}
 
 .hidden {
   animation: fadeIn .1s ease-out forwards;
